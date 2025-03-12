@@ -20,7 +20,6 @@ const Nav = () => {
 
   const navLinks = [
     { name: 'Calculator', href: '#calculator' },
-    { name: 'GitHub Guide', href: '#github-guide' }
   ];
 
   return (
@@ -41,7 +40,7 @@ const Nav = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
           >
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-primary/70 flex items-center justify-center shadow-md">
+            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-violet-500 to-violet-700 flex items-center justify-center shadow-md">
               <span className="font-semibold text-white">L</span>
             </div>
             <span className="font-semibold text-lg">LIC Calculator</span>
@@ -52,7 +51,7 @@ const Nav = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-foreground transition-colors"
+                className="text-sm font-medium text-foreground/80 hover:text-violet-700 transition-colors"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + i * 0.1, duration: 0.5 }}
@@ -64,7 +63,7 @@ const Nav = () => {
           
           <motion.a
             href="#calculator"
-            className="btn-primary py-2 px-4 text-sm shadow-sm"
+            className="bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg text-sm shadow-sm"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.4, duration: 0.5 }}
