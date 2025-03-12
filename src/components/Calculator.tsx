@@ -177,9 +177,9 @@ const CalculatorComponent = () => {
                   </div>
                   <Slider
                     id="sumAssured"
-                    min={100000}
+                    min={1000}
                     max={10000000}
-                    step={100000}
+                    step={1000}
                     value={[sumAssured]}
                     onValueChange={(value) => setSumAssured(value[0])}
                     className="py-2"
